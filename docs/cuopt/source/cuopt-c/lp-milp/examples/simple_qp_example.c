@@ -66,14 +66,14 @@ cuopt_int_t test_simple_qp()
   */
 
   cuopt_int_t num_variables = 2;
-  cuopt_int_t num_constraints = 1;
+  cuopt_int_t num_constraints = 0;
   cuopt_int_t nnz = 2;
 
   // CSR format constraint matrix
   // https://docs.nvidia.com/nvpl/latest/sparse/storage_format/sparse_matrix.html#compressed-sparse-row-csr
-  cuopt_int_t row_offsets[] = {0, 2};
-  cuopt_int_t column_indices[] = {0, 1};
-  cuopt_float_t values[] = {1.0, 1.0};
+  cuopt_int_t row_offsets[] = {0};
+  cuopt_int_t column_indices[] = {};
+  cuopt_float_t values[] = {};
 
   // Objective coefficients
   // From the objective function: minimize x^2 + y^2
