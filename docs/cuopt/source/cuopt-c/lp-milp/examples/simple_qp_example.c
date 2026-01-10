@@ -130,7 +130,6 @@ cuopt_int_t test_simple_qp()
                                        constraint_rhs,
                                        var_lower_bounds,
                                        var_upper_bounds,
-                                       variable_types,
                                        &problem);
   if (status != CUOPT_SUCCESS) {
     printf("Error creating problem: %d\n", status);
